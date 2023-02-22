@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaQueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fernando's Snack</title>
+  </head>
+  <body>
+    <header class="header__container">
+      <div class="header__content">
+        <div class="header__auth">
+          <a class="btn__auth" href="pages/login.html">Login</a>
+          <div class="header__button">
+            <input type="checkbox" id="menu" />
+            <label for="menu"> ☰ </label>
+            <ul>
+              <li>
+                <a href="/"> Home </a>
+              </li>
+              <li>
+                <a href="#shopNow"> Shop </a>
+              </li>
+              <li>
+                <a href="#ourProducts"> Our Products </a>
+              </li>
+              <li>
+                <a href="#contact"> Contact </a>
+              </li>
+              <li>
+                <a href="pages/login.html"> Login </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__logo">Fernando's<span>Snacks</span></div>
+        <div class="header__cart">
+          <i class="bi bi-bag" id="cart__icon"></i>
+          <span class="badge"></span>
+          <section class="cart" id="section__cart">
+            <p>No hay artículos en el carrito 😥</p>
+          </section>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li>
+            <a href="/"> Home </a>
+          </li>
+          <li>
+            <a href="#shopNow"> Shop </a>
+          </li>
+          <li>
+            <a href="#ourProducts"> Our Products </a>
+          </li>
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero__section">
+      <img src="assets/img/PBandChoco.png" alt="" />
+      <img src="assets/img/white-exclamation.png" alt="" />
+      <div class="hero__text">
+        <h1>
+          INSPIRING MINDFUL
+          <span> SNACKING </span>
+        </h1>
+        <p>FREE SHIPPING ON ORDERS OVER $50</p>
+        <a href="#shopNow" class="hero__btn">
+          SHOP NOW
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="ourProducts__section">
+      <article class="ourProducts__image">
+        <img src="assets/img/iStock-1088608090.jpg" alt="" />
+      </article>
+      <article class="ourProducts__text" id="ourProducts">
+        <img src="assets/img/testimonial-background.jpg" alt="" />
+        <h2>
+          FEEL GOOD ABOUT
+          <span> WHAT YOU EAT! </span>
+        </h2>
+
+        <p>
+          Good snacks are important, because food plays such an important role
+          in our lives. It affects how we look, how we feel, and how we perform.
+          As a Registered Dietitian, I create flavorful snacks that allow you to
+          feel good about what you eat.
+        </p>
+        <div class="ourProducts__icons">
+          <p class="">
+            <span class="ourProducts__icons--icon">
+              <i class="fa-solid fa-wheat-awn"></i>
+            </span>
+            GRAIN
+            <span class="ourProducts__icons--text"> FREE </span>
+          </p>
+          <p class="">
+            <span class="ourProducts__icons--icon">
+              <i class="fa-solid fa-cookie"></i>
+            </span>
+            HEALTHY
+            <span class="ourProducts__icons--text"> SNACKS </span>
+          </p>
+          <p class="">
+            <span class="ourProducts__icons--icon">
+              <i class="fa fa-seedling"></i>
+            </span>
+            VEGAN
+            <span class="ourProducts__icons--text"> BRITTLE </span>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="separator__container">
+      <article class="separator__text">
+        <i class="fa-solid fa-quote-right"></i>
+        <h3>I REMEMBER TASTING THE GRANOLA FOR THE FIRST TIME,</h3>
+        <h4>YUM, I WAS HOOKED!</h4>
+      </article>
+    </section>
+
+    <section class="products__container" id="shopNow">
+      <h2>TRY ONE OF OUR FAVORITES</h2>
+      <p>
+        Enjoy your snacking experience. New here and not sure what to try first?
+        Check out some of our most popular snacks and products.
+      </p>
+
+      <article class="products__selection">
+        <ul>
+          <li>
+            <a class="filter">all</a>
+          </li>
+          <li>
+            <a class="filter">grain free</a>
+          </li>
+          <li>
+            <a class="filter">snacks</a>
+          </li>
+          <li>
+            <a class="filter">cookie bites</a>
+          </li>
+        </ul>
+      </article>
+
+      <article class="products__card" id="product"></article>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="title">Contact</h2>
+      <article class="contact__form">
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.083278640679!2d-4.460349084363654!3d40.18496007762609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4035b57551b6f3%3A0x84be095154d712f6!2sC.%20Falsa%2C%2045908%20Aldea%20en%20Cabo%2C%20Toledo%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1666635463877!5m2!1ses-419!2sar"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <form action="" class="form">
+          <div>
+            <input
+              type="text"
+              class="formControl"
+              placeholder="Ingrese su nombre"
+              maxlength="50"
+              required
+            />
+          </div>
+
+          <div>
+            <input type="email" placeholder="Correo" required />
+          </div>
+
+          <div>
+            <input type="text" placeholder="Asunto" required />
+          </div>
+
+          <div>
+            <textarea
+              name=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+              maxlength="300"
+              required
+            ></textarea>
+          </div>
+          <button class="template__button formBtn" type="submit">Enviar</button>
+        </form>
+      </article>
+    </section>
+
+    <template id="template__products">
+      <div class="template__cards">
+        <div class="template__img">
+          <img src="" alt="productos" id="template__img" />
+        </div>
+        <div class="template__content">
+          <p class="content__type" id="template__type"></p>
+          <h3 class="content__title" id="template__title"></h3>
+          <span class="content__price" id="template__price"></span>
+        </div>
+        <a class="template__button" id="template__button">Select Options</a>
+      </div>
+    </template>
+
+    <template id="template__cart">
+      <div class="template__cart">
+        <p class="cart__id"></p>
+        <img class="cart__img" src="" alt="" width="50px" />
+        <h3 class="cart__title"></h3>
+        <span class="cart__quantity"></span>
+        <p class="cart__price"></p>
+
+        <button class="btn btn__plus">+</button>
+        <button class="btn btn__remove">-</button>
+
+        <button class="cart__delete">Eliminar</button>
+      </div>
+    </template>
+    <script src="js/app.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/e0cf88fc96.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
