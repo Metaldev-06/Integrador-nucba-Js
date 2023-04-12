@@ -10,6 +10,8 @@ const fragment = document.createDocumentFragment();
 const filter = document.querySelectorAll(".filter");
 const badge = document.querySelector(".badge");
 
+const footerDate = document.getElementById("footer__date");
+
 let cart = {};
 
 const showProductsHome = (products) => {
@@ -157,3 +159,5 @@ document.addEventListener("DOMContentLoaded", () => {
     showCart();
   }
 });
+
+footerDate.textContent = new Date().getFullYear();
